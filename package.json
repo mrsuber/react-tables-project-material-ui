@@ -1,0 +1,23 @@
+{
+  "name": "react-tables-project-material-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsuber/react-tables-project-material-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrsuber/react-tables-project-material-ui/issues"
+  },
+  "homepage": "https://github.com/mrsuber/react-tables-project-material-ui#readme",
+  "dependencies": {
+    "create-react-app": "^5.0.0"
+  }
+}
