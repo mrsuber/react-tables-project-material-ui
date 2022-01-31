@@ -1,11 +1,21 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import './Home.css'
+import {data} from '../../data/data'
 
 const Home = () => {
+  const [cdata,setCdata] = useState([])
+setCdata(data)
+console.log(cdata)
+
   return (
     <>
-    <h2>This is a project ot build diffrent tables and chose the best Tech</h2>
-    <Link to="/material_ui_table">material ui table</Link>
+    <h2>The Main table hear</h2>
+    <Link to="/material_ui_table">material ui table</Link><br/>
+
+      <Link to="/htmlcssjs">Html Css JavaScript</Link>
+
+
     </>
   )
 }
