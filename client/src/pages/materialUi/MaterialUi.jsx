@@ -13,6 +13,8 @@ const MaterialUi = () => {
   return (
 
     <div>
+
+      <h2>This is the materailTable</h2>
       <MaterialTable  icons={tableIcons} columns={columns} data={tableData} title={title}/>
     </div>
   )
