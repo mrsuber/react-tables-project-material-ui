@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import {Link,useHistory} from 'react-router-dom'
 // import {ViewPopUp} from '../../../components'
 
 
@@ -12,14 +12,18 @@ const RecentInfoInput = () => {
       "TableType":"material-table",
       "TableName":"Material Table",
       "TableTech":"material-ui ",
-      "TableDesc":"material-ui installed with npm in react"},
+      "TableDesc":"material-ui installed with npm in react",
+      "Link":"/material_ui_table"
+    },
       {  "id":2,
         "TableType":"Html-css-js",
         "TableName":"Pure Html/Css/Js Table",
         "TableTech":"Html Css JavaScript ",
-        "TableDesc":"display table data and pagination"},
+        "TableDesc":"display table data and pagination",
+        "Link":"/htmlcssjs"
+      },
     ]
-
+    const history = useHistory()
   const [info, setInfo] = useState(data)
   // setInfo(data)
   // const [popup, setPopup] = useState(false)
@@ -51,7 +55,9 @@ const RecentInfoInput = () => {
   //   setPopup(true)
   //   setData(item)
   // }
-
+  const navigate = (link)=>{
+    history.push(link)
+  }
   return (
     <div className="admin__recentOrder">
 
@@ -77,7 +83,7 @@ const RecentInfoInput = () => {
         <tbody>
         {
           info.reverse().slice(0, 10).map((item,index)=>(
-            <tr key={index}>
+            <tr key={index} onClick={()=>navigate(item.Link)}>
               <td>{item.TableType}</td>
               <td>{item.TableName}</td>
               <td>{item.TableTech}</td>
