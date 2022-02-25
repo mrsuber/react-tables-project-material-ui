@@ -8,8 +8,8 @@ import {title, data, columns,tableIcons} from '../../data/data'
 
 
 const MaterialUi = () => {
-  const [tableData,setTableData]=useState([])
-  setTableData(data)
+  const [tableData,setTableData]=useState(data)
+
   return (
 
     <div>

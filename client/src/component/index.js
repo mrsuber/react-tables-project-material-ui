@@ -1,2 +1,7 @@
 export {default as Posts} from './posts/Posts'
 export {default as Pagination} from './pagination/Pagination'
+export {default as Sidebar} from './sidebar/Sidebar'
+export {default as Topbar} from './topbar/Topbar'
+export {default as Card} from './card/Card'
+export {default as ResentUsers} from './recentUsers/RecentUsers'
+export {default as RecentInfo} from './recentInfoInput/RecentInfoInput'
